@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nisarga D | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="logo">Nisarga<span>D</span></div>
+
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <button class="menu-btn" id="menuBtn">☰</button>
+  </header>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </div>
+
+  <!-- HERO -->
+  <section id="home" class="hero fade-in">
+    <div class="hero-content">
+      <p class="badge">🚀 Available for Internships & Projects</p>
+
+      <h1>Hi, I’m <span>Nisarga D</span> 👋</h1>
+
+      <h2>
+        Full Stack Developer <span class="dot">•</span> Python Developer
+      </h2>
+
+      <p class="hero-desc">
+        I build clean, fast and user-friendly web applications using Python, Flask, PostgreSQL,
+        and modern frontend technologies.
+      </p>
+
+      <div class="hero-buttons">
+        <a class="btn primary" href="#projects">View Projects</a>
+        <a class="btn outline" href="resume.pdf" download>Download Resume</a>
+      </div>
+
+      <div class="socials">
+        <a href="https://github.com/NisargaDas" target="_blank">GitHub</a>
+        <a href="https://www.linkedin.com/in/nisarga-d-0280752a1/" target="_blank">LinkedIn</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section fade-in">
+    <h2 class="section-title">About Me</h2>
+
+    <div class="card">
+      <p>
+        I’m <b>Nisarga D</b>, an Electronics & Communication Engineering student who is
+        transitioning into software development.
+      </p>
+
+      <p>
+        I enjoy building real-world full-stack projects using <b>Python, Flask, PostgreSQL</b>,
+        and clean UI using HTML/CSS/JavaScript.
+      </p>
+
+      <p>
+        I’m currently working on:
+        <b>StayEase</b> (Hostel/PG booking platform) and a
+        <b>Women Protection System</b> using real-time video analysis.
+      </p>
+
+      <p>
+        My goal is to become a confident full-stack developer and build impactful applications 🚀
+      </p>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="section fade-in">
+    <h2 class="section-title">Skills</h2>
+
+    <div class="grid">
+      <div class="skill">Python</div>
+      <div class="skill">Flask</div>
+      <div class="skill">PostgreSQL</div>
+      <div class="skill">SQL</div>
+      <div class="skill">HTML</div>
+      <div class="skill">CSS</div>
+      <div class="skill">JavaScript</div>
+      <div class="skill">Git & GitHub</div>
+      <div class="skill">DSA (Basics)</div>
+      <div class="skill">Problem Solving</div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="section fade-in">
+    <h2 class="section-title">Projects</h2>
+
+    <div class="projects-grid">
+
+      <div class="project-card">
+        <p class="project-tag">Full Stack</p>
+        <h3>StayEase (Hostel & PG Booking Platform)</h3>
+        <p>
+          A full-stack web app for hostel/PG booking built using Flask, PostgreSQL and a clean frontend UI.
+        </p>
+
+        <ul>
+          <li>Authentication (Login/Register)</li>
+          <li>Hostel listings + booking workflow</li>
+          <li>Reusable UI components</li>
+        </ul>
+
+        <div class="project-links">
+          <a class="btn small outline" href="https://github.com/NisargaDas" target="_blank">GitHub</a>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <p class="project-tag">AI + Safety</p>
+        <h3>Women Protection System (Real-Time Video)</h3>
+        <p>
+          AI-based project that detects gender count in real-time and sends alerts for suspicious conditions.
+        </p>
+
+        <ul>
+          <li>Gender classification</li>
+          <li>Male vs Female counting</li>
+          <li>Alert after 8 PM logic</li>
+        </ul>
+
+        <div class="project-links">
+          <a class="btn small outline" href="https://github.com/NisargaDas" target="_blank">GitHub</a>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <p class="project-tag">Data Engineering</p>
+        <h3>Weather Data ETL Pipeline (Python)</h3>
+        <p>
+          Built an ETL pipeline in Python for extracting, cleaning, normalizing and processing weather data.
+        </p>
+
+        <ul>
+          <li>Data extraction & cleaning</li>
+          <li>Normalization</li>
+          <li>Forecast integration</li>
+        </ul>
+
+        <div class="project-links">
+          <a class="btn small outline" href="https://github.com/NisargaDas" target="_blank">GitHub</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section fade-in">
+    <h2 class="section-title">Contact</h2>
+
+    <div class="card contact-card">
+      <p class="contact-text">
+        Want to connect with me? Send a message here 👇  
+        (Your email will be hidden — message will come safely to me.)
+      </p>
+
+      <!-- FORM: Replace YOUR_FORM_ID after creating Formspree -->
+      <form class="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <button class="btn primary" type="submit">Send Message</button>
+      </form>
+
+      <div class="contact-links">
+        <a class="btn outline" href="https://www.linkedin.com/in/nisarga-d-0280752a1/" target="_blank">
+          LinkedIn
+        </a>
+        <a class="btn outline" href="https://github.com/NisargaDas" target="_blank">
+          GitHub
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>© 2026 Nisarga D • Built with ❤️</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
